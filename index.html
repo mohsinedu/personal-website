@@ -6,7 +6,7 @@
     <title>Md Mohsin Ansari - Digital Marketer</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -15,6 +15,7 @@
         }
         .container {
             width: 80%;
+            max-width: 1200px;
             margin: auto;
             overflow: hidden;
         }
@@ -24,12 +25,6 @@
             padding: 20px 0;
             border-bottom: 3px solid #d4af37;
         }
-        header a {
-            color: #d4af37;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
         header ul {
             padding: 0;
             list-style: none;
@@ -38,6 +33,12 @@
         header li {
             display: inline;
             padding: 0 20px;
+        }
+        header a {
+            color: #d4af37;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
         }
         .main-header {
             text-align: center;
@@ -51,22 +52,29 @@
         .main-header p {
             font-size: 20px;
         }
-        .about, .experience, .contact {
+        .section {
             padding: 20px 0;
             background: #fff;
             margin: 20px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        .about img {
+        .section img {
             float: left;
             margin-right: 20px;
             border-radius: 50%;
             width: 150px;
             height: 150px;
         }
-        .about h2, .experience h2, .contact h2 {
+        .section h2 {
             text-align: center;
             color: #d4af37;
+        }
+        .section p, .section ul {
+            margin: 0 20px;
+        }
+        .section ul {
+            padding-left: 20px;
         }
         .clearfix::after {
             content: "";
@@ -85,18 +93,15 @@
                 width: 90%;
                 margin: auto;
             }
-            header ul {
-                text-align: center;
-            }
             header li {
                 display: block;
                 padding: 10px 0;
             }
-            .about img {
+            .section img {
                 display: block;
                 margin: 0 auto 20px;
             }
-            .about {
+            .section {
                 text-align: center;
             }
         }
@@ -120,38 +125,39 @@
         </div>
     </section>
 
-    <section id="about" class="about container clearfix">
-        <img src="your-profile-picture.jpg" alt="Md Mohsin Ansari">
-        <h2>About Me</h2>
-        <p>
-            I'm a Performance Marketing/Digital Marketing professional with over 7 years of experience driving growth in Mobile VAS, DCB, SaaS, EdTech, E-commerce, and more. Skilled in overseeing multiple countries simultaneously and managing projects to deliver results and add value to revenue growth projects. Passionate about technology and innovation.
-        </p>
+    <section id="about" class="section clearfix">
+        <div class="container">
+            <img src="your-profile-picture.jpg" alt="Md Mohsin Ansari">
+            <h2>About Me</h2>
+            <p>I'm a Performance Marketing/Digital Marketing professional with over 7 years of experience driving growth in Mobile VAS, DCB, SaaS, EdTech, E-commerce, and more. Skilled in overseeing multiple countries simultaneously and managing projects to deliver results and add value to revenue growth projects. Passionate about technology and innovation.</p>
+        </div>
     </section>
 
-    <section id="experience" class="experience container">
-        <h2>Experience</h2>
-        <h3>Manager - Performance Marketing at First Screen</h3>
-        <p>March 2022 - Present | Dubai, United Arab Emirates</p>
-        <ul>
-            <li>Managed a monthly budget of $250,000, leading to a 30% increase in user acquisition and a 20% increase in revenue.</li>
-            <li>Optimized campaigns across various channels, resulting in a 25% decrease in cost-per-acquisition and a 20% increase in ROI.</li>
-            <!-- Add more bullet points as needed -->
-        </ul>
-        <h3>Assistant Manager - Performance Marketing at Medvarsity Online Ltd</h3>
-        <p>October 2020 - September 2021 | Hyderabad, Telangana, India</p>
-        <ul>
-            <li>Managed domestic & international lead generation campaigns with a monthly budget of $30,000.</li>
-            <li>Drove a 50% increase in lead volume through successful strategies on Google Search, YouTube, and Facebook/Instagram.</li>
-            <!-- Add more bullet points as needed -->
-        </ul>
-        <!-- Add more positions as needed -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <h3>Manager - Performance Marketing at First Screen</h3>
+            <p>March 2022 - Present | Dubai, United Arab Emirates</p>
+            <ul>
+                <li>Managed a monthly budget of $250,000, leading to a 30% increase in user acquisition and a 20% increase in revenue.</li>
+                <li>Optimized campaigns across various channels, resulting in a 25% decrease in cost-per-acquisition and a 20% increase in ROI.</li>
+            </ul>
+            <h3>Assistant Manager - Performance Marketing at Medvarsity Online Ltd</h3>
+            <p>October 2020 - September 2021 | Hyderabad, Telangana, India</p>
+            <ul>
+                <li>Managed domestic & international lead generation campaigns with a monthly budget of $30,000.</li>
+                <li>Drove a 50% increase in lead volume through successful strategies on Google Search, YouTube, and Facebook/Instagram.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact" class="contact container">
-        <h2>Contact Information</h2>
-        <p>Phone: +971568736344</p>
-        <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mohsin-ansari">linkedin.com/in/md-mohsin-ansari</a></p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Phone: +971568736344</p>
+            <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mohsin-ansari">linkedin.com/in/md-mohsin-ansari</a></p>
+        </div>
     </section>
 
     <footer>
