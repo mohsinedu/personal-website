@@ -12,6 +12,7 @@
             padding: 0;
             color: #333;
             background: linear-gradient(135deg, #0F3443, #34E89E);
+            letter-spacing: 0.5px;
         }
         .container {
             width: 80%;
@@ -53,7 +54,7 @@
             font-size: 20px;
         }
         .section {
-            padding: 20px 0;
+            padding: 20px;
             background: #fff;
             margin: 20px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -61,8 +62,9 @@
         }
         .section-content {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
         }
         .section img {
             margin-right: 20px;
@@ -73,11 +75,17 @@
         .section h2 {
             color: #DECBA4;
         }
-        .section p, .section ul {
+        .section p {
             margin: 0 20px;
         }
         .section ul {
-            padding-left: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .section ul li {
+            margin: 0;
+            padding: 0;
         }
         footer {
             text-align: center;
@@ -96,7 +104,9 @@
                 padding: 10px 0;
             }
             .section-content {
+                flex-direction: column;
                 align-items: center;
+                text-align: center;
             }
             .section img {
                 margin: 0 auto 20px;
@@ -128,35 +138,41 @@
     <section id="about" class="section">
         <div class="container section-content">
             <img src="your-profile-picture.jpg" alt="Md Mohsin Ansari">
-            <h2>About Me</h2>
-            <p>I'm a Performance Marketing/Digital Marketing professional with over 7 years of experience driving growth in Mobile VAS, DCB, SaaS, EdTech, E-commerce, and more. Skilled in overseeing multiple countries simultaneously and managing projects to deliver results and add value to revenue growth projects. Passionate about technology and innovation.</p>
+            <div>
+                <h2>About Me</h2>
+                <p>I'm a Performance Marketing/Digital Marketing professional with over 7 years of experience driving growth in Mobile VAS, DCB, SaaS, EdTech, E-commerce, and more. Skilled in overseeing multiple countries simultaneously and managing projects to deliver results and add value to revenue growth projects. Passionate about technology and innovation.</p>
+            </div>
         </div>
     </section>
 
     <section id="experience" class="section">
         <div class="container section-content">
-            <h2>Experience</h2>
-            <h3>Manager - Performance Marketing at First Screen</h3>
-            <p>March 2022 - Present | Dubai, United Arab Emirates</p>
-            <ul>
-                <li>Managed a monthly budget of $250,000, leading to a 30% increase in user acquisition and a 20% increase in revenue.</li>
-                <li>Optimized campaigns across various channels, resulting in a 25% decrease in cost-per-acquisition and a 20% increase in ROI.</li>
-            </ul>
-            <h3>Assistant Manager - Performance Marketing at Medvarsity Online Ltd</h3>
-            <p>October 2020 - September 2021 | Hyderabad, Telangana, India</p>
-            <ul>
-                <li>Managed domestic & international lead generation campaigns with a monthly budget of $30,000.</li>
-                <li>Drove a 50% increase in lead volume through successful strategies on Google Search, YouTube, and Facebook/Instagram.</li>
-            </ul>
+            <div>
+                <h2>Experience</h2>
+                <h3>Manager - Performance Marketing at First Screen</h3>
+                <p>March 2022 - Present | Dubai, United Arab Emirates</p>
+                <ul>
+                    <li>Managed a monthly budget of $250,000, leading to a 30% increase in user acquisition and a 20% increase in revenue.</li>
+                    <li>Optimized campaigns across various channels, resulting in a 25% decrease in cost-per-acquisition and a 20% increase in ROI.</li>
+                </ul>
+                <h3>Assistant Manager - Performance Marketing at Medvarsity Online Ltd</h3>
+                <p>October 2020 - September 2021 | Hyderabad, Telangana, India</p>
+                <ul>
+                    <li>Managed domestic & international lead generation campaigns with a monthly budget of $30,000.</li>
+                    <li>Drove a 50% increase in lead volume through successful strategies on Google Search, YouTube, and Facebook/Instagram.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container section-content">
-            <h2>Contact Information</h2>
-            <p>Phone: +971568736344</p>
-            <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mohsin-ansari">linkedin.com/in/md-mohsin-ansari</a></p>
+            <div>
+                <h2>Contact Information</h2>
+                <p>Phone: +971568736344</p>
+                <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mohsin-ansari">linkedin.com/in/md-mohsin-ansari</a></p>
+            </div>
         </div>
     </section>
 
