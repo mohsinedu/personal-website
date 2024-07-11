@@ -93,6 +93,19 @@
             margin: 0;
             padding: 5px 0;
         }
+        .underlined {
+            display: inline-block;
+            position: relative;
+        }
+        .underlined::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #34E89E;
+            bottom: -5px;
+            left: 0;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -143,8 +156,8 @@
 
     <section class="main-header">
         <div class="container">
-            <h1>Md&nbsp;Mohsin&nbsp;Ansari</h1>
-            <p>Results-driven&nbsp;Performance&nbsp;&amp;&nbsp;Digital&nbsp;Marketer</p>
+            <h1 class="underlined">Md&nbsp;Mohsin&nbsp;Ansari</h1>
+            <p class="underlined">Results-driven&nbsp;Performance&nbsp;&amp;&nbsp;Digital&nbsp;Marketer</p>
         </div>
     </section>
 
@@ -165,32 +178,4 @@
                 <h3>Manager - Performance Marketing at First Screen</h3>
                 <p>March 2022 - Present | Dubai, United Arab Emirates</p>
                 <ul>
-                    <li>Managed a monthly budget of $250,000, leading to a 30% increase in user acquisition and a 20% increase in revenue.</li>
-                    <li>Optimized campaigns across various channels, resulting in a 25% decrease in cost-per-acquisition and a 20% increase in ROI.</li>
-                </ul>
-                <h3>Assistant Manager - Performance Marketing at Medvarsity Online Ltd</h3>
-                <p>October 2020 - September 2021 | Hyderabad, Telangana, India</p>
-                <ul>
-                    <li>Managed domestic & international lead generation campaigns with a monthly budget of $30,000.</li>
-                    <li>Drove a 50% increase in lead volume through successful strategies on Google Search, YouTube, and Facebook/Instagram.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container section-content">
-            <div>
-                <h2>Contact Information</h2>
-                <p>Phone: +971568736344</p>
-                <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/md-mohsin-ansari">linkedin.com/in/md-mohsin-ansari</a></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Md Mohsin Ansari. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+  
