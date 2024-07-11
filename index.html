@@ -19,6 +19,7 @@
             max-width: 1200px;
             margin: auto;
             overflow: hidden;
+            padding: 20px;
         }
         header {
             background: #3E5151;
@@ -30,6 +31,7 @@
             padding: 0;
             list-style: none;
             text-align: center;
+            margin: 0;
         }
         header li {
             display: inline;
@@ -46,12 +48,15 @@
             background: #3E5151;
             color: #fff;
             padding: 50px 0;
+            margin-bottom: 20px;
         }
         .main-header h1 {
             font-size: 40px;
+            margin: 0;
         }
         .main-header p {
             font-size: 20px;
+            margin: 10px 0 0;
         }
         .section {
             padding: 20px;
@@ -62,28 +67,25 @@
         }
         .section-content {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            justify-content: flex-start;
-            flex-wrap: wrap;
         }
         .section img {
-            margin-right: 20px;
+            margin-bottom: 20px;
             border-radius: 50%;
             width: 150px;
             height: 150px;
         }
         .section h2 {
             color: #DECBA4;
+            margin-bottom: 10px;
         }
-        .section p {
-            margin: 10px 20px;
-            flex: 1 1 100%;
+        .section p, .section ul {
+            margin: 10px 0;
         }
         .section ul {
-            margin: 0 20px;
-            padding: 0;
+            padding-left: 0;
             list-style: none;
-            flex: 1 1 100%;
         }
         .section ul li {
             margin: 0;
@@ -95,25 +97,22 @@
             background: #3E5151;
             color: #fff;
             border-top: 3px solid #DECBA4;
+            margin-top: 20px;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .container {
-                width: 90%;
-                margin: auto;
-            }
-            header li {
-                display: block;
-                padding: 10px 0;
+                padding: 40px;
             }
             .section-content {
+                flex-direction: row;
                 align-items: center;
-                text-align: center;
             }
             .section img {
-                margin: 0 auto 20px;
+                margin-right: 20px;
+                margin-bottom: 0;
             }
-            .section {
-                text-align: center;
+            .section p, .section ul {
+                margin: 0 20px;
             }
         }
     </style>
