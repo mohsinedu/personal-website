@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             color: #333;
@@ -62,9 +62,9 @@
         }
         .section-content {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
         }
         .section img {
             margin-right: 20px;
@@ -76,16 +76,18 @@
             color: #DECBA4;
         }
         .section p {
-            margin: 0 20px;
+            margin: 10px 20px;
+            flex: 1 1 100%;
         }
         .section ul {
-            margin: 0;
+            margin: 0 20px;
             padding: 0;
             list-style: none;
+            flex: 1 1 100%;
         }
         .section ul li {
             margin: 0;
-            padding: 0;
+            padding: 5px 0;
         }
         footer {
             text-align: center;
@@ -104,7 +106,6 @@
                 padding: 10px 0;
             }
             .section-content {
-                flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
