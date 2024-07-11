@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #0F3443, #34E89E);
         }
         .container {
             width: 80%;
@@ -20,10 +20,10 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #3E5151;
             color: #fff;
             padding: 20px 0;
-            border-bottom: 3px solid #d4af37;
+            border-bottom: 3px solid #DECBA4;
         }
         header ul {
             padding: 0;
@@ -35,14 +35,14 @@
             padding: 0 20px;
         }
         header a {
-            color: #d4af37;
+            color: #DECBA4;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
         .main-header {
             text-align: center;
-            background: #333;
+            background: #3E5151;
             color: #fff;
             padding: 50px 0;
         }
@@ -59,16 +59,19 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
         .section img {
-            float: left;
             margin-right: 20px;
             border-radius: 50%;
             width: 150px;
             height: 150px;
         }
         .section h2 {
-            text-align: center;
-            color: #d4af37;
+            color: #DECBA4;
         }
         .section p, .section ul {
             margin: 0 20px;
@@ -76,17 +79,12 @@
         .section ul {
             padding-left: 20px;
         }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
         footer {
             text-align: center;
             padding: 20px;
-            background: #333;
+            background: #3E5151;
             color: #fff;
-            border-top: 3px solid #d4af37;
+            border-top: 3px solid #DECBA4;
         }
         @media (max-width: 768px) {
             .container {
@@ -97,8 +95,10 @@
                 display: block;
                 padding: 10px 0;
             }
+            .section-content {
+                align-items: center;
+            }
             .section img {
-                display: block;
                 margin: 0 auto 20px;
             }
             .section {
@@ -125,8 +125,8 @@
         </div>
     </section>
 
-    <section id="about" class="section clearfix">
-        <div class="container">
+    <section id="about" class="section">
+        <div class="container section-content">
             <img src="your-profile-picture.jpg" alt="Md Mohsin Ansari">
             <h2>About Me</h2>
             <p>I'm a Performance Marketing/Digital Marketing professional with over 7 years of experience driving growth in Mobile VAS, DCB, SaaS, EdTech, E-commerce, and more. Skilled in overseeing multiple countries simultaneously and managing projects to deliver results and add value to revenue growth projects. Passionate about technology and innovation.</p>
@@ -134,7 +134,7 @@
     </section>
 
     <section id="experience" class="section">
-        <div class="container">
+        <div class="container section-content">
             <h2>Experience</h2>
             <h3>Manager - Performance Marketing at First Screen</h3>
             <p>March 2022 - Present | Dubai, United Arab Emirates</p>
@@ -152,7 +152,7 @@
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
+        <div class="container section-content">
             <h2>Contact Information</h2>
             <p>Phone: +971568736344</p>
             <p>Email: <a href="mailto:mohsinjampot@gmail.com">mohsinjampot@gmail.com</a></p>
